@@ -7,6 +7,10 @@ import {
 } from 'react-native';
 
 const CIRCLE_SIZE = 80;
+this.panResponder = {};
+this.previousLeft = 0;
+this.previousTop = 0;
+this.circleStyles = {};
 
 export default class PanResponderExample extends Component {
 
@@ -14,12 +18,6 @@ export default class PanResponderExample extends Component {
     title: 'PanResponder Sample',
     description: 'Shows the use of PanResponder to provide basic gesture handling.',
   }
-
-  panResponder: {}
-  previousLeft: 0;
-  previousTop: 0;
-  circleStyles: {};
-  circle: ({ setNativeProps(props: Object): void });
 
   componentWillMount() {
     this.panResponder = PanResponder.create({
