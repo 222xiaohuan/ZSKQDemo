@@ -64,6 +64,12 @@ export default class Welcome extends Component {
     });
   }
 
+onPressPanResponderExample() {
+  RNManager.showMessage("jump to Pan Responder Example");
+    this.props.navigator.push({
+      name: 'panresponder',
+    });
+}
 
   onPressRNChart(){
     RNManager.showMessage("jump to rn chart");
@@ -228,6 +234,10 @@ export default class Welcome extends Component {
       <Image style={styles.searchIcon} source={splash}/>
 
         <Text style={styles.welcome}>用户信息{JSON.stringify(this.state.users)}</Text>
+
+        <Text style={styles.welcome} onPress={this.onPressPanResponderExample.bind(this)}>
+          jump to PanResponderExample
+        </Text>
 
         <Text style={styles.welcome} onPress={this.onPressRNMPChart.bind(this)}>
           jump to react-native-mp-android-chart

@@ -1,0 +1,35 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "rules": {
+        "arrow-body-style": [2, "as-needed"],
+        "constructor-super": 2,
+        "eol-last": 0,
+        "eqeqeq": 0,
+        "max-len": 0,
+        "new-cap": [2, {"properties": false}],
+        "no-cond-assign": [2, "except-parens"],
+        "no-inline-comments": 2,
+        "no-param-reassign": [2, {"props": false}],
+        "no-return-assign": 0,
+        "no-undef": 0,
+        "no-unused-vars": [2, {"vars": "local", "args": "none"}],
+        "no-use-before-define": 0,
+        "quote-props": [2, "as-needed"],
+        "radix": [2, "as-needed"],
+        "react/jsx-closing-bracket-location": 0,
+        "react/jsx-no-undef": 0,
+        "react/no-did-mount-set-state": 0,
+        "react/prefer-stateless-function": 0,
+        "react/prop-types": 0,
+        "sort-imports": [2, {"ignoreCase": false, "memberSyntaxSortOrder": ["multiple", "single", "all", "none"]}]
+    },
+    "plugins": [
+        "react",
+        "react-native"
+    ]
+}

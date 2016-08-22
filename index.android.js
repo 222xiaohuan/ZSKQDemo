@@ -32,6 +32,7 @@ import QRScan from './app/QRScan.js';
 import BarcoderReader from './app/BarcoderReader.js';
 import RNChart from './app/RNChart.js';
 import StackedBarChartScreen from './app/StackedBarChartScreen.js';
+import PanResponderExample from './app/PanResponderExample.js';
 
 let _navigator;
 
@@ -111,6 +112,9 @@ class AwesomeProject extends Component {
         break;
       case "rnmpchart":
         Component = StackedBarChartScreen;
+        break;
+      case "panresponder":
+        Component = PanResponderExample;
         break;
     }
     return <Component navigator={navigator} {...router.params}/>
