@@ -12,7 +12,6 @@
     "react-native": "^0.30.0",
     "react-native-animatable": "^0.6.1",
     "react-native-baidumap": "0.0.14",
-    "react-native-barcodescanner": "^3.0.0",
     "react-native-button": "^1.6.0",
     "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
     "react-native-camera-android": "^1.0.7",

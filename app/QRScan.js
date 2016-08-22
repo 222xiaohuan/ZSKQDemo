@@ -5,7 +5,7 @@ import {
   View,
   StyleSheet
 } from 'react-native';
-import BarcodeScanner from 'react-native-barcodescanner';
+import BarcodeScanner from './BarcodeScanner';
 
 export default class QRScan extends Component {
 

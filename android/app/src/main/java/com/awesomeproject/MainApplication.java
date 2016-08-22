@@ -6,7 +6,7 @@ package com.awesomeproject;
 import android.app.Application;
 
 import com.ReactCamera.RNCameraViewPackage;
-import com.eguma.barcodescanner.BarcodeScannerPackage;
+import com.awesomeproject.barcodescanner.BarcodeScannerPackage;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
