@@ -68,12 +68,18 @@ export default class PanResponderExample extends Component {
   }
 
   handlePanResponderGrant(e, gestureState) {
+    // 开始手势操作。给用户一些视觉反馈，让他们知道发生了什么事情！
+    // gestureState.{x,y}0 现在会被设置为0
     this.highlight();
   }
 
   handlePanResponderMove(e, gestureState) {
+    // 最近一次的移动距离为gestureState.move{X,Y}
+    // 从成为响应者开始时的累计手势移动距离为gestureState.d{x,y}
     this.circleStyles.style.left = this.previousLeft + gestureState.dx;
     this.circleStyles.style.top = this.previousTop + gestureState.dy;
+
+    console.log('handlePanResponderMove----', ' previousLeft = ', this.previousLeft, ' dx= ', gestureState.dx, ' previousTop = ', this.previousTop, ' dy= ', gestureState.dy);
     this.updateNativeStyles();
   }
 
@@ -81,6 +87,7 @@ export default class PanResponderExample extends Component {
     this.unHighlight();
     this.previousLeft += gestureState.dx;
     this.previousTop += gestureState.dy;
+    console.log('handlePanResponderEnd----', ' previousLeft = ', this.previousLeft, ' dx= ', gestureState.dx, ' previousTop = ', this.previousTop, ' dy= ', gestureState.dy);
   }
 
   render() {
